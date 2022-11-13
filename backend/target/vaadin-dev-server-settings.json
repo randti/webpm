@@ -1,0 +1,14 @@
+{
+  "frontendFolder": "C:/Users/randt/exporrr/webpm/backend/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/randt/exporrr/webpm/backend/target/flow-frontend",
+  "staticOutput": "C:/Users/randt/exporrr/webpm/backend/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "frontendBundleOutput": "C:\\Users\\randt\\exporrr\\webpm\\backend\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "addonFrontendFolder": "target/flow-frontend/",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\randt\\exporrr\\webpm\\backend\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
