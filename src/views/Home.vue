@@ -4,9 +4,6 @@
 
 <template>
 <div class="home">
-  <h1><p style="text-align: justify; line-height:1;">ИРИТ</p></h1>
-  <h2><p style="text-align: justify; line-height:1;">НГТУ</p></h2>
-
   <div class="name">
     <p style="text-align: center; font-family: cursive;"><strong>Прикладная математика и информатика</strong></p><br>
   </div>
@@ -20,7 +17,7 @@
       <tbody>
       <tr>
       <td style="text-align: left; background-color: #696969;"><strong>Направления подготовки</strong></td>
-      <td style="text-align: right; background-color: #696969; padding-left: 60px;">Программирование и моделирование&nbsp;</td>
+      <td style="text-align: right; background-color: #696969; padding-left: 60px;">Математическое моделирование&nbsp;</td>
       </tr>
       <tr>
       <td style="text-align: left; background-color: #808080"><strong>Адрес</strong></td>
@@ -152,15 +149,6 @@
 	<li>Компьютерная математика&nbsp;</li>
 </ul>
 
-
-
-
-
-  
-
-
-
-  
 
 </div>
 </template>

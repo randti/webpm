@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import SidebarMenu from '@/components/SidebarMenu.vue';
+import Menu from '@/components/Menu.vue';
 
 </script>
 
 <template>
   <div id="root">
-    <SidebarMenu class="sidebar" />
+    <Menu class="menu" />
     <RouterView class="router-view" />
   </div>
 </template>
@@ -14,13 +14,13 @@ import SidebarMenu from '@/components/SidebarMenu.vue';
 <style scoped lang="scss">
 #root {
   display: grid;
-  grid-template-areas: 'sidebar router-view';
+  grid-template-areas: 'router-view';
   grid-template-columns: auto 1fr;
   font-family: sans-serif;
 }
 
 .sidebar {
-  grid-area: 'sidebar';
+  grid-area: 'menu';
 }
 
 .router-view {

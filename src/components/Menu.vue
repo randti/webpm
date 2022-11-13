@@ -3,7 +3,7 @@ import { shallowRef } from 'vue';
 import { RouterLink } from 'vue-router';
 import IconAngle from './icons/IconAngle.vue';
 import IconEmail from './icons/IconEmail.vue';
-import IconEmployeeGroup from './icons/IconEmployeeGroup.vue';
+import IconEmployeeGroup from './icons/IconTeacher.vue';
 import IconExclamation from './icons/IconExclamation.vue';
 import IconHome from './icons/IconHome.vue';
 
@@ -17,7 +17,6 @@ function toggleSidebar() {
 
 <template>
   <div class="wrapper">
-    
     <aside :vue:is-open="isSidebarOpen">
       <ul class="sidebar-head">
         <li>
@@ -48,7 +47,7 @@ function toggleSidebar() {
           </router-link>
         </li>
         <li>
-          <router-link to="/team">
+          <router-link to="/teacher">
             <IconEmployeeGroup />
             <Transition name="fade">
               <span v-show="isSidebarOpen">Преподаватели</span>

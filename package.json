@@ -1,6 +1,6 @@
 {
-  "name": "vue_sidebar_menu",
-  "author": "Morteza Jamshidi <devmor.j@gmail.com>",
+  "name": "webpm",
+  "author": "Evgeny Denisow <randty@yandex.com>",
   "private": true,
   "version": "0.3.0",
   "scripts": {
