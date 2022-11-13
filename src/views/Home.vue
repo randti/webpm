@@ -8,7 +8,7 @@
   <h2><p style="text-align: justify; line-height:1;">НГТУ</p></h2>
 
   <div class="name">
-    <p>Прикладная математика и информатика</p>
+    <p style="text-align: center; font-family: cursive;"><strong>Прикладная математика и информатика</strong></p><br>
   </div>
 
   <div class="info">
