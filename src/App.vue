@@ -25,6 +25,6 @@ import Menu from '@/components/Menu.vue';
 
 .router-view {
   grid-area: 'router-view';
-  padding: 1rem;
+  padding: 0rem;
 }
 </style>
