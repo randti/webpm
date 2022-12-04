@@ -206,24 +206,29 @@
 
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .first_image{
   float: right;
   margin: 0 10px 5px 0;
+  
 }
 
 
 
 .all{
-  background-color: #280042;
+  background-color: auto;
+  color:auto;
+  
 }
 
 .text{
   text-align: justify;
   line-height:2;
   font-family: Georgia, serif;
-  font-size: 19px;
+  font-size: 23px;
+
+  
 }
 .home{
   margin-left: 18%;
@@ -271,38 +276,33 @@ strong{
 
   .container {
     position: static;
-    margin-left: 100px;
   }
   
   table {
-    width: 800px;
+    width: 1100px;
     border-collapse: collapse;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border-radius: 25px;
+    
+    
   }
   
   th,
   td {
     padding: 15px;
     background-color: rgba(88, 86, 86, 0.274);
-    color: #fff;
+    color: auto;
+    font-size:22px;
   }
   
-  th {
-    text-align: left;
-  }
   
-  thead {
-    th {
-      background-color: #55608f;
-    }
-  }
+  
+ 
   
   tbody {
     tr {
       &:hover {
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(12, 0, 0, 0.13);
       }
     }
     td {

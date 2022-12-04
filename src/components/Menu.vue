@@ -7,6 +7,7 @@ import IconEmployeeGroup from './icons/IconTeacher.vue';
 import IconExclamation from './icons/IconExclamation.vue';
 import IconHome from './icons/IconHome.vue';
 
+
 const isSidebarOpen = shallowRef<Boolean>(false)
 
 function toggleSidebar() {
