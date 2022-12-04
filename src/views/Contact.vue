@@ -1,15 +1,9 @@
 <script setup lang="ts">
-
-
 </script>
 
 <template>
 <div class="size">
-  <br><br><br><br><br><br>
-Контакты
-<teacher/>
-============================
-
+  <p style="margin-top:80px; "></p>
 <div class="Table">
   <div class="container">
     <table>
