@@ -1,184 +1,180 @@
 <script setup lang="ts">
-import { shallowRef } from 'vue';
-import { RouterLink } from 'vue-router';
-import IconAngle from './icons/IconAngle.vue';
-import IconEmail from './icons/IconEmail.vue';
-import IconEmployeeGroup from './icons/IconTeacher.vue';
-import IconExclamation from './icons/IconExclamation.vue';
-import IconHome from './icons/IconHome.vue';
 
-
-const isSidebarOpen = shallowRef<Boolean>(false)
-
-function toggleSidebar() {
-  isSidebarOpen.value = !isSidebarOpen.value;
-}
 
 </script>
 
 <template>
-  <div class="wrapper">
-    <aside :vue:is-open="isSidebarOpen">
-      <ul class="sidebar-head">
-        <li>
-          <button class="sidebar-toggle" :class="isSidebarOpen ? 'toggle-button' : '' ">
-            <IconAngle @click="toggleSidebar" />
-          </button>
-        </li>
-        
-      </ul>
+<div class="size">
 
-      <h4 :transparent="!isSidebarOpen">Меню</h4>
-
-      <ul>
+<header class="header" role="banner">
+  
+	<div class="container">
+		<nav><ul>
         <li>
           <router-link to="/">
-            <IconHome />
             <Transition name="fade">
-              <span v-show="isSidebarOpen">Главная</span>
+              <a>Главная</a>
             </Transition>
+
           </router-link>
         </li>
+
         <li>
           <router-link to="/about">
-            <IconExclamation />
             <Transition name="fade">
-              <span v-show="isSidebarOpen">Курсы</span>
+              <a>Курсы</a>
             </Transition>
+
           </router-link>
         </li>
+
         <li>
           <router-link to="/teacher">
-            <IconEmployeeGroup />
             <Transition name="fade">
-              <span v-show="isSidebarOpen">Преподаватели</span>
+              <a>Преподаватели</a>
             </Transition>
+
           </router-link>
         </li>
+
         <li>
           <router-link to="/contact">
-            <IconEmail />
             <Transition name="fade">
-              <span v-show="isSidebarOpen">Контакты</span>
+              <a>Контакты</a>
             </Transition>
+
           </router-link>
         </li>
-      </ul>
-    </aside>
-  </div>
+
+      </ul></nav>
+	</div>
+</header>
+
+</div>
+
+
+
 </template>
 
+<script>
+</script>
+
+
 <style scoped lang="scss">
-@use '@/assets/scss/colors' as clr;
 
-$sidebar-width: 4rem;
-$toggle-duration: 300ms;
-$sidebar-padding-inline-start: 1rem;
 
-aside {
-  color: clr.$primary;
-  background: clr.$bg-dark;
-  display: flex;
-  flex-direction: column;
-  min-height: 642vh;
-  padding-block: 1rem;
-  transition: all $toggle-duration;
-  width: $sidebar-width;
+
+$initial-header-height : 7.5em;
+$scrolling-header-height : 5.5em;
+
+$menu-active-background :  #c4c4c4;
+$menu-active-color : rgb(0, 0, 0);
+
+* {
+  box-sizing:border-box;
+  
 }
 
-aside[vue\:is-open=true] {
-  width: 3 * $sidebar-width;
+
+body{
+  background:whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+  color: #787979;
+  padding: 8em 0 5em 0;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-block-end: 1rem;
+.container {
+  width: 100%;
+  font-size:25px;
 }
 
-img {
-  object-fit: contain;
+.header .container {
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 100px;
+
 }
 
-li {
-  min-width: fit-content;
-  cursor: pointer;
-  padding-inline-start: $sidebar-padding-inline-start;
-
-  &:hover {
-    color: clr.$secondary;
-    background-color: lighten($color: clr.$bg-dark, $amount: 5);
-  }
-
-  & a {
-    // border-right: 0.25rem solid white;
-    display: flex;
-    align-items: center;
-    column-gap: 0.75rem;
-    position: relative;
-    padding-block: 0.5rem;
-  }
-
-  a.router-link-exact-active::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 0.25rem;
-    height: 100%;
-    background-color: clr.$secondary;
-  }
-}
-.sidebar-head {
-  position: relative;
-  padding-block-end: 4rem;
-} 
-
-.sidebar-toggle {
-  padding-inline-start: $sidebar-padding-inline-start;
-}
-
-h4 {
-  padding-block-end: 1rem;
-  padding-inline-start: $sidebar-padding-inline-start;
-  user-select: none;
-  pointer-events: none;
-  opacity: 0.5;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.125ch;
-  transition: opacity $toggle-duration;
-}
-
-h4[transparent=true] {
-  opacity: 0;
-}
-
-button {
-  cursor: pointer;
-  position: absolute;
-  transition-duration: $toggle-duration;
-  transition-property: transform, left, top;
+.header {
+  color:#030000;
+  width: 100%;
+  height: 5em;
+  text-align: center;
+  background-color: #0099FF;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  top: 1rem;
-  transform: translateX(0%) translateY(2rem) rotateZ(0deg);
 
-  &.toggle-button {
-    left: 100%;
-    top: 0;
-    transform: translateX(-100%) translateY(0rem) rotateZ(180deg);
+  &.scrolling{
+    height: $scrolling-header-height;  
+  }
+  &.hide{
+    top:-$scrolling-header-height;   
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition-property: opacity, transform;
-  transition-duration: $toggle-duration;
+.header nav {
+  height: 100%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateX(-100%);
+nav ul {
+  list-style: none;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+
+  
+  li {
+    float: left;
+    display: inline-block;
+    overflow:hidden;
+    position:relative;
+    margin-left:.625em;
+    border-radius: 25px;
+    color:white;
+    
+    a {
+
+      height: $initial-header-height / 3;
+      line-height: $initial-header-height / 3;
+      display: block;
+      padding: 0 0.625em;
+      color:inherit;
+      text-decoration: none;
+      z-index:1;
+    }
+    &:before {
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:-1;
+
+      }
+    &:hover:before{
+      background-color: lighten($menu-active-background, 30);
+
+    }
+    &.active:before{
+      background-color: $menu-active-background;
+
+    }
+    
+    &.active a {
+      font-weight:bold;
+    }
+    
+    &:hover a,
+    &.active a {
+
+      color: $menu-active-color;
+    }
+  }
 }
 </style>

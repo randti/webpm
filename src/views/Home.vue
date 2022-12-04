@@ -7,50 +7,16 @@
 <div class="all">
 
 <div class="home">
+  margin-left: auto; margin-right: auto;
   
-  <div class="best">
-    <p style="margin-bottom:5px; margin-left:100px; margin-top:20px">
-    <span>
-      Лучшее направление по мнению всех
-    </span>
-    </p>
-  </div>
 
   <div class="name">
-    <p style="font-family: cursive; font-size:100px; line-height:1; margin-left:100px"><strong>Прикладная математика и информатика</strong></p><br>
+    <p style="font-family: cursive; font-size:100px; line-height:1; margin-top:80px; text-align: center "><strong>Прикладная математика и информатика</strong></p><br>
   </div>
   <p style="margin-top:30px"></p>
 
 
 
-  <div class="Table">
-    <div class="container">
-      <table>
-        <tbody>
-          <tr>
-            <td>Направления подготовки</td>
-            <td>Математическое моделирование</td>
-          </tr>
-          <tr>
-            <td>Адрес</td>
-            <td>Первый корпус, ауд. 1223</td>
-          </tr>
-          <tr>
-            <td>Телефон, e-mail</td>
-            <td>8 (831) 436-63-93, pm@nntu.ru</td>
-          </tr>
-          <tr>
-            <td>Почтовый адрес</td>
-            <td>603950, Н. Новгород, ул.Минина, д.24, ауд. 1223</td>
-          </tr>
-          <tr>
-            <td>Заведующий кафедрой</td>
-            <td>Профессор, доктор физико-математических наук Куркин Андрей Александрович </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 
 
 
@@ -274,7 +240,9 @@ strong{
 .Table{
   html,
 
+  
   .container {
+    
     position: static;
   }
   
@@ -283,7 +251,8 @@ strong{
     border-collapse: collapse;
     overflow: hidden;
     border-radius: 25px;
-    
+    margin-left: auto;
+    margin-right: auto;
     
   }
   
@@ -322,20 +291,7 @@ strong{
     }
   }
 }
-.best{
-  span {
-    text-transform: capitalize;
-    color: transparent;
-  
-  
-    font-size: 30px;
-    font-family: 'Times New Roman', serif;
-    letter-spacing: 2px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
-    -webkit-background-clip: text;
-  }
-}
+
 
 .fon{
   bottom: 200px;
