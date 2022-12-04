@@ -3,8 +3,25 @@
 </script>
 
 <template>
-  <div class="wrapper">Contact View</div>
+<div class="size">
+Контакты
+<teacher/>
+
+</div>
+
+
+
 </template>
 
-<style scoped lang="scss">
-</style>
+<script>
+import Teacher from "@/object/teacher.vue";
+  
+export default {
+    components:{
+      Teacher
+    },
+
+};
+</script>
+
+<style></style>
