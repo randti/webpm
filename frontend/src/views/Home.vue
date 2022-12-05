@@ -7,7 +7,6 @@
 
     <div class="home">
 
-
         <div class="name">
             <p style="font-family: cursive; font-size:55px; line-height:1; margin-top:80px; text-align: center ">
                 <strong>Кафедра «Прикладная математика и информатика»</strong>
@@ -101,8 +100,6 @@
                 <p style="margin-top:110px"></p>
             </div>
 
-            <p style="margin-top:100px"></p>
-
             <div class="name">
                 <p style="text-align: center; font-family: cursive;"><strong>Сферы профессиональной деятельности выпускников</strong></p>
             </div>
@@ -120,15 +117,11 @@
                 <p style="margin-top:90px"></p>
             </div>
 
-            <p style="margin-top:100px"></p>
-
             <div class="fon">
                 <p style="text-align: justify;">Прохождение преддипломной практики студентов в большинстве случаев организовано на предприятиях Нижнего Новгорода. Кафедра имеет тесные связи и договора о сотрудничестве с различными предприятиями Нижнего Новгорода.</p>
                 <p style="text-align: justify;">Студенты по направлению подготовки «Прикладная математика и информатика» проходят практику на следующих предприятиях: ЗАО «ИНТЕЛ АО», ООО «Датавижн НН», Управление Федерального казначейства по Нижегородской Области, ООО «Мера НН», ООО «Территория контактов», ООО «НИЦ СВТ», ОАО «Гипрогазцентр», ОАО «ФНПЦ «ННИПИ «Кварц», ОАО «ННПО им. М.В.Фрунзе», ООО «Теком», ООО «МФИ Софт», МРСК Центра и приволжья (филиал Нижновэнерго ПО «Цэнтральные электрические сети»), ООО «Нижегородтехэнерго», НИИИС им. Ю.Е. Седакова, ФНЦП ОАО «НПП Полет».</p>
 
             </div>
-
-            <p style="margin-top:100px"></p>
 
             <div class="name">
                 <p style="text-align: center; font-family: cursive;"><strong>Тематика научных исследований</strong></p>
@@ -142,21 +135,19 @@
                 </ol>
             </div>
 
-            <p style="margin-top:100px"></p>
             <div class="fon">
                 <p style="text-align: justify;">Исследования сотрудников кафедры проводятся в рамках совместных проектов по научно-образовательным и исследовательским программам, и поддерживаются грантами Министерства образования и науки Российской Федерации, Федеральной целевой программы «Исследования и разработки по приоритетным направлениям развития научно-технологического комплекса России на 2014-2020 годы», Российского фонда фундаментальных исследований, грантами и стипендиями Президента РФ для молодых российских ученых.</p>
                 <p style="text-align: justify;">Ведущие ученые кафедры неоднократно получали премии и звания лауреатов на престижных отечественных и международных конкурсах.</p>
             </div>
 
         </div>
-        <p style="margin-top:100px"></p>
 
     </div>
 
 </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .first_image {
     float: right;
     margin: 0 10px 5px 0;
@@ -172,7 +163,7 @@
 .text {
     text-align: justify;
     line-height: 2;
-    font-family: Georgia, serif;
+    font-family: 'Gotham Pro';
     font-size: 23px;
 
 }
@@ -215,67 +206,11 @@ strong {
     font-weight: 700;
 }
 
-.center {
-    margin-left: 50%;
-    margin-right: 50%;
-}
-
-.Table {
-    html,
-
-    .container {
-
-        position: static;
-    }
-
-    table {
-        width: 1100px;
-        border-collapse: collapse;
-        overflow: hidden;
-        border-radius: 25px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    th,
-    td {
-        padding: 15px;
-        background-color: rgba(88, 86, 86, 0.274);
-        color: auto;
-        font-size: 22px;
-    }
-
-    tbody {
-        tr {
-            &:hover {
-                background-color: rgba(12, 0, 0, 0.13);
-            }
-        }
-
-        td {
-            position: relative;
-
-            &:hover {
-                &:before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: -9999px;
-                    bottom: -9999px;
-                    background-color: rgba(255, 255, 255, 0.2);
-                    z-index: -1;
-                }
-            }
-        }
-    }
-}
-
 .fon {
     bottom: 200px;
     background-color: rgba(88, 86, 86, 0.274);
     padding: 75px;
     border-radius: 25px;
+    margin-bottom: 100px;
 }
 </style>

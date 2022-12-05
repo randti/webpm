@@ -4,7 +4,7 @@
 </script>
 
 <template>
-<div class="size">
+<div class="wrapper">
 
 <header class="header" role="banner">
   
